@@ -28,7 +28,7 @@ services:
             - ./www:/var/www
             - ./tmp:/tmp/
     mysql:
-        image: mysql:5.7
+        image: mariadb:10.3
         ports:
             - "3306:3306"
         volumes:
@@ -37,3 +37,17 @@ services:
         # задаем пароль для root пользователя
         environment:
             MYSQL_ROOT_PASSWORD: secret
+    pma:
+      # используем последний стабильный образ phpmyadmin
+        image: phpmyadmin/phpmyadmin
+        restart: always
+        links:
+            - mysql:mysql
+        ports:
+            - 8183:80
+        environment:
+            # прописываем название нашего MySQL хоста
+            PMA_HOST: mysql
+            MYSQL_USERNAME: root
+            MYSQL_ROOT_PASSWORD: secret
+
