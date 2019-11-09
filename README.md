@@ -1,6 +1,6 @@
 # Контейнеры Docker для разворачивания окружения под сайт на 1С Битрикс 
 
-Контейнеры Docker для разворачивания окружения под сайт на 1С Битрикс ( Nginx + PHP-FPM 7.1 + MariaDB 10.3 + Phpmyadmin )
+Контейнеры Docker для разворачивания окружения под сайт на 1С Битрикс ( Nginx + PHP-FPM 7.2 + MariaDB 10.3 + Phpmyadmin )
 
 ## Требования
 
@@ -28,9 +28,9 @@ yum install -y mc nano wget git docker docker-compose && chkconfig docker on && 
 
 cd /ваша папка
 
-git clone https://github.com/krutikov-vadim2016/bitrix-php-fpm7.1-mariadb10.3.git
+git clone https://github.com/krutikov-vadim2016/bitrix-php-fpm7.2-mariadb10.3.git
 
-cd bitrix-php-fpm7.1-mariadb10.3
+cd bitrix-php-fpm7.2-mariadb10.3
 
 chown -R 33:33 www tmp
 
