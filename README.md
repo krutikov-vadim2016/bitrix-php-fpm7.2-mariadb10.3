@@ -57,3 +57,12 @@ root / secret ( пароль прописывается в файле docker-com
 phpMyAdmin доступен по ссылке http://IP_SERVER:8183
 
 в качестве сервера подключения к БД указать mysql вместо localhost
+
+### Ссылки на другие конфигурации
+https://github.com/krutikov-vadim2016/bitrix-php-fpm7.0-mysql5.7
+
+https://github.com/krutikov-vadim2016/bitrix-php-fpm7.1-mariadb10.3
+
+https://github.com/krutikov-vadim2016/bitrix-php-fpm7.2-mysql5.7
+
+https://github.com/krutikov-vadim2016/bitrix-php-fpm7.1-mysql5.7
