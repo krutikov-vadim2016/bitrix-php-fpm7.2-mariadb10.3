@@ -28,9 +28,9 @@ yum install -y mc nano wget git docker docker-compose && chkconfig docker on && 
 
 cd /ваша папка
 
-git clone https://github.com/krutikov-vadim2016/bitrix-php-fpm7.1-mysql5.7.git
+git clone https://github.com/krutikov-vadim2016/bitrix-php-fpm7.1-mariadb10.3.git
 
-cd bitrix-php-fpm7.1-mysql5.7
+cd bitrix-php-fpm7.1-mariadb10.3
 
 chown -R 33:33 www tmp
 
@@ -53,5 +53,7 @@ docker-compose up --build
 
 Данные к MySQL:
 root / secret ( пароль прописывается в файле docker-compose.yml )
+
+phpMyAdmin доступен по ссылке http://IP_SERVER:8183
 
 в качестве сервера подключения к БД указать mysql вместо localhost
